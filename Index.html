@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Elfmeter Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>⚽ Elfmeter Simulation</h1>
+
+<div class="controls">
+    <label>Schussstärke:
+        <input type="range" id="power" min="5" max="20" value="12">
+    </label>
+
+    <label>Drall:
+        <input type="range" id="spin" min="-5" max="5" value="0">
+    </label>
+
+    <button onclick="shoot()">Schießen</button>
+</div>
+
+<canvas id="field" width="800" height="500"></canvas>
+
+<p id="result"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
